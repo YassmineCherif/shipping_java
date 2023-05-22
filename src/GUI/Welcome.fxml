@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FEF7E4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.WelcomeController">
+   <children>
+      <Label layoutX="350.0" layoutY="115.0" prefHeight="54.0" prefWidth="341.0" text="TakTak Company" textFill="#04048a">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="retour" layoutX="410.0" layoutY="230.0" onAction="#retourner" onMouseClicked="#retourner" prefHeight="79.0" prefWidth="204.0" style="-fx-background-color: #7B829F;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="fermer" layoutX="956.0" layoutY="14.0" onAction="#cancel" onMouseClicked="#cancel" prefHeight="0.0" prefWidth="16.0" style="-fx-background-color: red;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="nomlogin" layoutX="790.0" layoutY="17.0" prefHeight="31.0" prefWidth="120.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="historique" layoutX="391.0" layoutY="343.0" onAction="#hist" onMouseClicked="#hist" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: #7B829F;" text="Historique partenaire" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="historiquelivreur" layoutX="391.0" layoutY="455.0" onAction="#histLiv" onMouseClicked="#histLiv" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: #7B829F;" text="Historique Livreur" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
